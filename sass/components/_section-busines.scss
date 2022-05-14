@@ -1,0 +1,33 @@
+.business__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.busines__item {
+    position: relative;
+}
+
+.busines__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busines__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+.busines__img {
+    display: block;
+}

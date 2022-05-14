@@ -1,0 +1,43 @@
+.benefits {
+    padding-bottom: 0px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--text-color);
+    width: 270px;
+    margin-top: 10px;
+}
+
+.benefits__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits__link {
+    border: 0px;
+    border-radius: 4px;
+    background: rgba(245, 244, 250, 1);
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+}
