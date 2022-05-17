@@ -1,5 +1,5 @@
 .benefits {
-    padding-bottom: 0px;
+    
     border: 0;
     
 }
@@ -21,7 +21,6 @@
 }
 .benefits__item {
     width: 100%;
-    outline: 1px solid tomato;
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -49,14 +48,13 @@
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.03em;
-    text-align: center;
     text-transform: uppercase;
     margin-top: 30px;
     }
 
 @media screen and (min-with: 768px) {
     .benefits__subtitle {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -65,16 +63,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: center;
     color: var(--text-color);
     width: 100%;
     margin-top: 10px;
 }
-@media screen and (min-with: 768px) {
-    .benefits__text {
-        text-align: left;
-    }
-}
+
 
 
 .benefits__link {

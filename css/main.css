@@ -296,7 +296,6 @@ ol {
 }
 
 .benefits {
-  padding-bottom: 0px;
   border: 0;
 }
 
@@ -326,7 +325,6 @@ ol {
 }
 .benefits__item {
   width: 100%;
-  outline: 1px solid tomato;
 }
 .benefits__item:not(:last-child) {
   margin-bottom: 30px;
@@ -354,31 +352,24 @@ ol {
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   margin-top: 30px;
 }
 
 @media screen and (min-with: 768px) {
   .benefits__subtitle {
-    text-align: left;
+    text-align: center;
   }
 }
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--text-color);
   width: 100%;
   margin-top: 10px;
 }
 
-@media screen and (min-with: 768px) {
-  .benefits__text {
-    text-align: left;
-  }
-}
 .benefits__link {
   border: 0px;
   border-radius: 4px;
@@ -707,9 +698,6 @@ ol {
 
 @media screen and (max-width: 767px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -735,22 +723,22 @@ ol {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+.contact-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
   .contact-container {
-    margin-left: 76px;
-    margin-right: 150px;
+    width: 206px;
+    margin-left: 65px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-container {
-    width: 231px;
-    margin-right: 70px;
     margin-left: 0;
+    margin-right: 70px;
   }
 }
 .footer__logo {
@@ -826,20 +814,19 @@ ol {
 .soc-container {
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 60px;
-  width: 206px;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .soc-container {
-    margin-right: 89px;
+    width: 206px;
+    margin-right: 75px;
   }
 }
 @media screen and (min-width: 1200px) {
   .soc-container {
-    margin-left: 0;
+    margin-right: 93px;
   }
 }
 .call {
@@ -861,15 +848,10 @@ ol {
 
 .form {
   display: block;
-  width: 450px;
+  width: 100%;
   margin-top: 60px;
 }
 
-@media screen and (max-width: 479px) {
-  .form {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 1199px) {
   .form {
     display: -webkit-box;
@@ -879,13 +861,13 @@ ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .form {
     position: relative;
+    width: 570px;
   }
 }
 .form__tex {
@@ -899,6 +881,11 @@ ol {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__tex {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form__wrap {
     display: -webkit-box;
@@ -923,6 +910,7 @@ ol {
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 12px;
+  height: 50px;
   width: 100%;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
@@ -941,9 +929,15 @@ ol {
   outline: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .form__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form__input {
     padding-right: 150px;
+    width: 358px;
   }
 }
 .form__icon {
@@ -961,12 +955,14 @@ ol {
   padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   display: block;
 }
 
 @media screen and (min-width: 1200px) {
   .form__btn {
     margin-right: 0;
+    margin-top: 0;
   }
 }
 .backdrop {

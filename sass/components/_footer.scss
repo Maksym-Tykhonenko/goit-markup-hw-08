@@ -7,12 +7,11 @@
 
 .footer__container {
     display: flex;
-    //display: block;
 }
 @media screen and (max-width: 767px) {
     .footer__container {
-        display: flex;
         flex-direction: column;
+        
     }
 }
 @media screen and (min-width: 768px),
@@ -27,22 +26,23 @@
     .footer__container {
         flex-wrap: wrap;
         align-items: baseline;
-        justify-content: flex-start;
     }
 }
 
 //блок контактів
-@media screen and (min-width:768px), (max-width:1199px) {
+.contact-container {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
     .contact-container {
-        margin-left: 76px;
-        margin-right: 150px;
+        width: 206px;
+        margin-left: 65px;
     }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .contact-container {
-        width: 231px;
-        margin-right: 70px;
         margin-left: 0;
+        margin-right: 70px;
     }
 }
 .footer__logo {
@@ -118,19 +118,18 @@
 .soc-container {
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
-    width: 206px;
+    width: 100%;
 }
-@media screen and (min-width:768px), (max-width:1199px) {
+@media screen and (min-width: 768px) {
     .soc-container {
-        margin-right: 89px;
+        width: 206px;
+        margin-right: 75px;
     }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .soc-container {
-        margin-left: 0;
+        margin-right: 93px;
     }
 }
 
