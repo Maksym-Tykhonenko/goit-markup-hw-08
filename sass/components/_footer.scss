@@ -7,17 +7,61 @@
 
 .footer__container {
     display: flex;
+    //display: block;
+}
+@media screen and (max-width: 767px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px),
+(max-width:1199px) {
+    .footer__container {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
 }
 
-.contact-container {
-    margin-right: 70px;
-    width: 231px;
+//блок контактів
+@media screen and (min-width:768px), (max-width:1199px) {
+    .contact-container {
+        margin-left: 76px;
+        margin-right: 150px;
+    }
 }
+@media screen and (min-width:1200px) {
+    .contact-container {
+        width: 231px;
+        margin-right: 70px;
+        margin-left: 0;
+    }
+}
+.footer__logo {
+    display: block;
+    justify-content: center;
+}
+
 .logo__studio--white {
     color: var(--third-color);
 }
+
 .footer-address {
     margin-top: 20px;
+}
+@media screen and (min-width:1200px) {
+    .footer-address {
+        margin-right: 70px;
+        width: 231px;
+    }
 }
 
 .address__text {
@@ -27,11 +71,31 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
 }
+@media screen and (min-width:1200px) {
+    .address__text {
+        text-align: start;
+    }
+}
+//
+.address__list {
+    display: block;
+    text-align: center;
+}
+
+//
+
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
+@media screen and (min-width:1200px) {
+    .address__item {
+    text-align: start;
+}
+}
+
 
 .address__link {
     color: var(--footer-cont-color);
@@ -50,16 +114,30 @@
     }
 }
 
-
+//блок соц. сетей
 .soc-container {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
     width: 206px;
-    margin-right: 93px;
+}
+@media screen and (min-width:768px), (max-width:1199px) {
+    .soc-container {
+        margin-right: 89px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .soc-container {
+        margin-left: 0;
+    }
 }
 
 .call {
     font-weight: 700;
     font-size: 14px;
-    line-height: 2.18;
+    line-height: 1.14;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -72,3 +150,5 @@
 .social__icon--white {
     fill: #ffffff;
 }
+
+//блок форми лежить в файлі _form

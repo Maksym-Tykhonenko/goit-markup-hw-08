@@ -308,11 +308,11 @@
 
     </main>
 
-    <!--подвал
+    <!--подвал-->
     <footer class="footer">
         <div class="container footer__container">
             <div class="contact-container">
-                <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio--white">Studio</span></a>
+                <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio--white">Studio</span></a>
                 <address class="footer-address address">
                     <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul class="list address__list">
@@ -327,7 +327,7 @@
             
                 </address>
             </div>
-        
+          
             <div class="soc-container">
                  <p class="call">Присоединяйтесь</p>
                  <ul class="list social__list">
@@ -361,19 +361,22 @@
                      </li>
                  </ul>
             </div>
-            <form action="" class="form">
+          <!-- 354px;-->
+           <form action="" class="form footer__form">
                 <p class="form__tex">Подпишитесь на рассылку</p>
-                <label class="form__mail">
-                    <input type="email" 
-                    name="email" 
-                    placeholder="E-mail" 
-                    style="width: 354px; height: 50px;"
-                    class="form__input">
-                </label>
-                <button class="btn form-btn" type="submit">Подписаться<svg class="form__icon" width="24" height="28"><use href="./images/icons/symbol-defs.svg#icon-icon-send"></use></svg></button>
+                <div class="form__wrap">
+                    <label class="form__mail">
+                        <input type="email" 
+                        name="email" 
+                        placeholder="E-mail" 
+                        style="width: 100%; height: 50px;"
+                        class="form__input">
+                    </label>
+                    <button class="btn form__btn" type="submit">Подписаться<svg class="form__icon" width="24" height="28"><use href="./images/icons/symbol-defs.svg#icon-icon-send"></use></svg></button>
+                </div>
             </form>
         </div>
-     </footer>-->
+     </footer>
 
      <!--Модалка-->
      <div class="backdrop is-hidden" data-modal>
