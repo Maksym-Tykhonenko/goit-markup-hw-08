@@ -9,11 +9,13 @@
     display: flex;
     align-items: center;
 }
-//@media screen and (max-width: 479px) {
-   // .checkbox__text {
-   //     display: inline-block;
-   // }
-//}
+@media screen and (mфч-width: 479px) {
+    .checkbox__text {
+        display: inline-block;
+    }
+}
+
+
 @media screen and (min-width: 480px) {
     .checkbox__text {
         font-size: 12px;
@@ -79,6 +81,10 @@
             background-color: var(--accent-color);
             bottom: 0;
             left: 0;
-        }
+    }
 }
-
+@media screen and (max-width: 479px) {
+    .checkbox__linck::after {
+        display: none;
+    }
+}
