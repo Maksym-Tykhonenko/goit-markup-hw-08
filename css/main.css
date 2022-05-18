@@ -356,7 +356,7 @@ ol {
   margin-top: 30px;
 }
 
-@media screen and (min-with: 768px) {
+@media screen and (max-width: 767px) {
   .benefits__subtitle {
     text-align: center;
   }
@@ -388,14 +388,29 @@ ol {
 
 .section-title {
   color: var(--primary-text-color);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+.business {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .business {
+    display: none;
+  }
+}
 .business__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,7 +992,7 @@ ol {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   background: rgb(255, 255, 255);
   border-radius: 4px;
@@ -997,6 +1012,16 @@ ol {
           animation-duration: 250ms;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .btn-close {
   position: absolute;
   top: 8px;
@@ -1163,7 +1188,7 @@ ol {
   margin-bottom: 4px;
   padding-top: 20px;
   color: rgb(117, 117, 117);
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
   line-height: 1.17;
   display: -webkit-box;
@@ -1174,6 +1199,16 @@ ol {
           align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .checkbox__text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+  }
+}
 .checkbox__text span {
   width: 16px;
   height: 15px;
