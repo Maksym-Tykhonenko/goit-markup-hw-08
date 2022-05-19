@@ -1,5 +1,8 @@
-.header-nav {
-    width: 294px;
+
+@media screen and (max-width: 767px) {
+    .header-nav {
+        display: none;
+    }
 }
 
 .header-nav__list .header-nav__link.current {
