@@ -16,8 +16,8 @@
     }
 }
 
+
 .project__item {
-    height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -29,9 +29,8 @@
 
 @media screen and (min-width: 768px) {
     .project__item {
-        width: 354px;
+        width: calc(100% / 2 - 30px);
         margin-left: 30px;
-        
     }
 }
 
@@ -116,11 +115,3 @@
     padding: 20px 24px;
     flex-grow: 1;
 }
-
-
-//@media screen and (max-width: 767px), (min-width: 1200px) {
- //   .project__bottom-part {
- //       height: 110px;
-//
- //   }
-//}

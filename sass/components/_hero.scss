@@ -3,15 +3,26 @@
     text-align: center;
     padding-top: 75px;
     padding-bottom: 75px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bgim-hiro.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+        url(../images/hiro/bgim-hiro-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(0, 0, 0, 1)
-    &
+    border: 1px solid rgba(0, 0, 0, 1);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/hiro/bgim-hiro-mob-2x.jpg);
+            }
 }
+}
+
+
 @media screen and (min-width: 480px) {
     .hero {
         width: 100%;
@@ -23,15 +34,38 @@
 @media screen and (min-width: 768px) {
     .hero {
         width: 100%;
-        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url(../images/hiro/bgim-hiro-tabl.jpg);
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    & {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../images/hiro/bgim-hiro-tabl-2x.jpg);
+                    }
+                }
+            }
     }
-}
+
 @media screen and (min-width: 1200px) {
     .hero {
         width: 100%;
         padding-top: 200px;
         padding-bottom: 200px;
-        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hiro/bgim-hiro.jpg);
+         @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                     url(../images/hiro/bgim-hiro-2x.jpg);
+                    }
+                }
     }
 }
 
@@ -58,4 +92,3 @@
         line-height: 1.36;
     }
 }
-        

@@ -17,7 +17,7 @@
 </head>
 <!---->
 <body>
-    <!--навигация сайта
+    <!--навигация сайта-->
     <header class="page-header">
         <div class="container page-hader__block">
             <a class="logo page-header__logo" href="./index.html"><span class="logo__web">Web</span><span
@@ -44,33 +44,46 @@
                         </svg>+38 096 111 11 11</a>
                 </div>
             </div>
-            <button class="header-menu-open">
+            <button class="header-menu-open" data-menu-open>
                 <svg class="header-menu-open__icon" width="40" height="40">
                     <use class="header-menu-open__svg" href="./images/icons/symbol-defs.svg#icon-open"></use>
                 </svg>
             </button>
-            <div class="mob-menu">
-                <button class="mob-menu__close"></button>
-                <nav class="mob-menu__nav">
-                    <ul class="list mob-menu__list">
-                        <li class="mob-menu__item"><a class="header-nav__link" href="./index.html">Студия</a></li>
-                        <li class="mob-menu__item"><a class="header-nav__link current" href="./portfolio.html">Портфолио</a></li>
-                        <li class="mob-menu__item"><a class="header-nav__link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="mob-menu__contact">
-                    <a class="mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                    <a class="mob-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <!--mob-menu-->
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div class="mob-menu__top">
+                        <button class="mob-menu__close" data-menu-close>
+                            <svg class="mob-menu__close-icon" width="40" height="40">
+                                <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <nav class="mob-menu__nav">
+                            <ul class="list mob-menu__list-nav">
+                                <li class="mob-menu__item-nav"><a class="mob-menu__link-nav" href="./index.html">Студия</a></li>
+                                <li class="mob-menu__item-nav"><a class="mob-menu__link-nav" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="mob-menu__item-nav"><a class="mob-menu__link-nav" href="">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mob-menu__bottom">
+                        <div class="mob-menu__contact">
+                            <a class="mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="mob-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </div>
+                        <div class="mob-menu__soc-networck">
+                            <ul class="list mob-menu__list-soc">
+                                <li class="mob-menu__item-soc"><a class="mob-menu__link-soc">Instagram</a></li>
+                                <li class="mob-menu__item-soc"><a class="mob-menu__link-soc mob-menu__tw">Twitter</a></li>
+                                <li class="mob-menu__item-soc"><a class="mob-menu__link-soc mob-menu__fb">Facebook</a></li>
+                                <li class="mob-menu__item-soc"><a class="mob-menu__link-soc mob-menu__ld">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
                 </div>
-                <div class="mob-menu__soc-networck">
-                    <ul>
-                        <li><a>Instagram</a></li>
-                        <li><a>Twitter</a></li>
-                        <li><a>Facebook</a></li>
-                        <li><a>LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>-->
+            </div>
         </div>
     </header>
 <main class="portfolio container">
@@ -90,7 +103,27 @@
                 <ul class="project__list list">
                     <li class="project__item">
                         <div class="project__top-part">
-                            <a class="project__link" href=""><img class="project__img" src="./images/portfolio_1-min.jpg" alt="сайт технокряк на компьютере"></a>
+                            <a class="project__link" href="">
+                                <picture>
+                                <source
+                                srcset="
+                                ./images/portfolio/portfolio_1-min.jpg 1x, 
+                                ./images/portfolio/portfolio_1-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="
+                                ./images/portfolio/portfolio_1-tabl.jpg 1x, 
+                                ./images/portfolio/portfolio_1-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="
+                                ./images/portfolio/portfolio_1-mob.jpg 1x, 
+                                ./images/portfolio/portfolio_1-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                                <img 
+                                srcset="
+                                ./images/portfolio/portfolio_1-min.jpg 1x, 
+                                ./images/portfolio/portfolio_1-min-2x.jpg 2x"
+                                class="project__img" 
+                                src="./images/portfolio/portfolio_1-min.jpg" 
+                                alt="сайт технокряк на компьютере">
+                            </a>
                             <p class="project__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -101,7 +134,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_2-min.jpg" alt="постер матча New Orlean vs Golden Star"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_2-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_2-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_2-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_2-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_2-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_2-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_2-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_2-min-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_2-min.jpg" 
+                            alt="постер матча New Orlean vs Golden Star">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -111,7 +162,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_3-min.jpg" alt="логотип ресторана"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_3-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_3-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_3-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_3-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_3-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_3-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_3-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_3-min-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_3-min.jpg" 
+                            alt="логотип ресторана">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -121,7 +190,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_4-min.jpg" alt="наушники"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_4-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_4-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_4-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_4-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_4-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_4-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_4-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_4-min-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_4-min.jpg" 
+                            alt="наушники">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro explicabo saepe molestiae aperiam soluta rem ex aliquid ullam modi?</p>
                         </div>
                         <div class="project__bottom-part">
@@ -131,7 +218,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_5-min.jpg" alt="2 маленькие коробки"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_5-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_5-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_5-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_5-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_5-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_5-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_5-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_5-mob-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_5-min.jpg" 
+                            alt="2 маленькие коробки">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -141,7 +246,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_6-min.jpg" alt="сайт Inspiration has no Borders на маниторе"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_6-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_6-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_6-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_6-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_6-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_6-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_6-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_6-mob-2x.jpg 2x"
+                                class="project__img" 
+                                src="./images/portfolio/portfolio_6-min.jpg"
+                                alt="сайт Inspiration has no Borders на маниторе">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -151,7 +274,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_7-min.jpg" alt="открытый журнал"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_7-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_7-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_7-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_7-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_7-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_7-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_7-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_7-mob-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_7-min.jpg" 
+                            alt="открытый журнал">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -161,7 +302,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_8-min.jpg" alt="логотип LAB"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_8-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_8-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_8-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_8-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_8-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_8-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_8-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_8-mob-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_8-min.jpg" 
+                            alt="логотип LAB">
+                        </a>
                         <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -171,7 +330,25 @@
                     </li>
                     <li class="project__item">
                         <div class="project__top-part">
-                        <a class="project__link" href=""><img class="project__img" src="./images/portfolio_9-min.jpg" alt="приложение Business на ноутбуке"></a>
+                        <a class="project__link" href="">
+                                <picture>
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_9-min.jpg 1x, 
+                                    ./images/portfolio/portfolio_9-min-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_9-tabl.jpg 1x, 
+                                    ./images/portfolio/portfolio_9-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="
+                                    ./images/portfolio/portfolio_9-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_9-mob-2x.jpg 2x" media="(min-width: 320px)">
+                                </picture>
+                            <img 
+                            srcset="./images/portfolio/portfolio_9-mob.jpg 1x, 
+                                    ./images/portfolio/portfolio_9-mob-2x.jpg 2x"
+                            class="project__img" 
+                            src="./images/portfolio/portfolio_9-min.jpg" 
+                            alt="приложение Business на ноутбуке">
+                        </a>
                             <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ea numquam ducimus ab magnam ex odio, tempore minima debitis fugiat!</p>
                         </div>
                         <div class="project__bottom-part">
@@ -255,7 +432,6 @@
     
         </div>
     </footer>
-
-
-
+<script src="./js/menu.js"></script>
 </body>
+</html>

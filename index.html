@@ -43,7 +43,7 @@
                 </svg>
             </button>
             <!--mob-menu-->
-            <div class="mob-menu" data-menu>
+            <div class="mob-menu is-hidden" data-menu>
                 <div class="container">
                     
                         <div class="mob-menu__top">
@@ -140,19 +140,43 @@
                <h2 class="section-title">Чем мы занимаемся</h2>
                <ul class="list business__list">
                    <li class="busines__item">
-                       <a href=""><img class="busines__img" src="./images/box_1.jpg" alt="фото 1" width="370"></a>
+                       <a href="">
+                            <img
+                            srcset="
+                            ./images/business/box_1.jpg 1x, 
+                            ./images/business/box_1-2x.jpg 2x"
+                             class="busines__img" 
+                            src="./images/business/box_1.jpg" 
+                            alt="фото 1" width="370">
+                       </a>
                        <div class="busines__overlay">
                            <h3 class="busines__subtitle">Десктопные приложения</h3>
                        </div>
                    </li>
                    <li class="busines__item">
-                       <a href=""><img class="busines__img" src="./images/box_2.jpg" alt="фото 2" width="370"></a>
+                       <a href="">
+                        <img 
+                        srcset="
+                        ./images/business/box_2.jpg 1x,  
+                        ./images/business/box_2-2x.jpg 2x"
+                        class="busines__img" 
+                        src="./images/business/box_2.jpg" 
+                        alt="фото 2" width="370">
+                       </a>
                        <div class="busines__overlay">
                            <h3 class="busines__subtitle">Мобильные приложения</h3>
                        </div>
                    </li>
                    <li class="busines__item">
-                       <a href=""><img class="busines__img" src="./images/box_3.jpg" alt="фото 3" width="370"></a>
+                       <a href="">
+                        <img 
+                        srcset="
+                        ./images/business/box_3.jpg 1x,  
+                        ./images/business/box_3-2x.jpg 2x"
+                        class="busines__img" 
+                        src="./images/business/box_3.jpg" 
+                        alt="фото 3" width="370">
+                       </a>
                        <div class="busines__overlay">
                            <h3 class="busines__subtitle">Дизайнерские решения</h3>
                        </div>
@@ -167,7 +191,27 @@
               <h2 class="section-title">Наша команда</h2>
               <ul class="list team__list">
                   <li class="team__item">
-                      <img class="team__img" src="./images/img.jpg" alt="Игорь Демьяненко" width="270">
+                      <picture>
+                          <source srcset="
+                      ./images/team/id.jpg 1x, 
+                      ./images/team/id-2x.jpg 2x"
+                      media="(min-width: 1200px)">
+                        <source srcset="
+                        ./images/team/id-tabl.jpg 1x, 
+                        ./images/team/id-tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source srcset="
+                        ./images/team/id-mob.jpg 1x, 
+                        ./images/team/id-mob-2x.jpg 2x" 
+                        media="(min-width: 320px)">
+                      </picture>
+                      <img 
+                      srcset="
+                      ./images/team/id.jpg 1x, 
+                      ./images/team/id-2x.jpg 2x"
+                      class="team__img" 
+                      src="./images/team/id.jpg" 
+                      alt="Игорь Демьяненко" width="270">
                       <div class="team__border-card">
                           <h3 class="team__card-name">Игорь Демьяненко</h3>
                           <p class="team__text"> Product Designer</p>
@@ -196,7 +240,27 @@
                       </div>
                   </li>
                   <li class="team__item">
-                      <img class="team__img" src="./images/img(1).jpg" alt="Ольга Репина" width="270">
+                      <picture>
+                          <source srcset="
+                      ./images/team/or.jpg 1x, 
+                      ./images/team/or-2x.jpg 2x"
+                      media="(min-width: 1200px)">
+                            <source srcset="
+                      ./images/team/or-tabl.jpg 1x, 
+                      ./images/team/or-tabl-2x.jpg 2x" 
+                      media="(min-width: 768px)">
+                        <source srcset="
+                        ./images/team/or-mob.jpg 1x, 
+                        ./images/team/or-mob-2x.jpg 2x"
+                         media="(min-width: 320px)">
+                      </picture>
+                      <img 
+                      srcset="
+                      ./images/team/or.jpg 1x, 
+                      ./images/team/or-2x.jpg 2x"
+                      class="team__img" 
+                      src="./images/team/or.jpg" 
+                      alt="Ольга Репина" width="270">
                       <div class="team__border-card">
                           <h3 class="team__card-name">Ольга Репина</h3>
                           <p class="team__text"> Frontend Developer</p>
@@ -225,7 +289,25 @@
                        </div>
                   </li>
                   <li class="team__item">
-                      <img class="team__img" src="./images/img(2).jpg" alt="Николай Тарасов" width="270">
+                      <picture>
+                          <source
+                      srcset="
+                      ./images/team/nt.jpg 1x, 
+                      ./images/team/nt-2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="
+                        ./images/team/nt-tabl.jpg 1x, 
+                        ./images/team/nt-tabl-2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="
+                        ./images/team/nt-mob.jpg 1x, 
+                        ./images/team/nt-mob-2x.jpg 2x" media="(min-width:320px)">
+                      </picture>
+                      <img 
+                      srcset="
+                      ./images/team/nt.jpg 1x, 
+                      ./images/team/nt-2x.jpg 2x"
+                      class="team__img" 
+                      src="./images/team/nt.jpg" 
+                      alt="Николай Тарасов" width="270">
                       <div class="team__border-card">
                           <h3 class="team__card-name">Николай Тарасов</h3>
                           <p class="team__text">Marketing</p>
@@ -254,7 +336,24 @@
                        </div>
                   </li>
                   <li class="team__item">
-                      <img class="team__img" src="./images/img(3).jpg" alt="Михаил Ермаков" width="270">
+                    <picture>
+                        <source srcset="
+                        ./images/team/me.jpg 1x, 
+                        ./images/team/me-2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="
+                        ./images/team/me-tabl.jpg 1x, 
+                        ./images/team/me-tabl-2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="
+                        ./images/team/me-mob.jpg 1x, 
+                        ./images/team/me-mob-2x.jpg 2x" media="(min-width:320px)">
+                    </picture>
+                      <img 
+                      srcset="
+                      ./images/team/me.jpg 1x, 
+                      ./images/team/me-2x.jpg 2x"
+                      class="team__img" 
+                      src="./images/team/me.jpg" 
+                      alt="Михаил Ермаков" width="270">
                       <div class="team__border-card">
                           <h3 class="team__card-name">Михаил Ермаков</h3>
                           <p class="team__text">UI Designer</p>
