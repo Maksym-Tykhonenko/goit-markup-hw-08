@@ -13,7 +13,7 @@
 
 .header-contact__link {
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -21,6 +21,11 @@
     &:focus,
     &:hover {
         color: var(--accent-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header-contact__link {
+        font-size: 14px;
     }
 }
 

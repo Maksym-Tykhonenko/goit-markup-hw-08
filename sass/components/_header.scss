@@ -5,13 +5,23 @@
 
 .container.page-hader__block {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .page-header__logo {
     margin-top: 24px;
     margin-bottom: 25px;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .page-header__logo {
+        margin-right: 88px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .page-header__logo {
+        margin-right: 93px;
+    }
 }
 /////
 .header-menu-open {
@@ -24,7 +34,7 @@
             display: none;
         }
 }
-/////
+///////////////
 .mob-menu {
     position: fixed;
     z-index: 5;
@@ -70,6 +80,7 @@
 }
 .mob-menu__tel {
     margin-bottom: 32px;
+    display: block;
     text-decoration: none;
     font-size: 30px;
     font-weight: 400;

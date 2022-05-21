@@ -57,7 +57,12 @@
 .footer-address {
     margin-top: 20px;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 768px) {
+    .footer-address {
+        width: 232px;
+    }
+}
+@media screen and (min-width: 1200px) {
     .footer-address {
         margin-right: 70px;
         width: 231px;
@@ -125,11 +130,13 @@
     .soc-container {
         width: 206px;
         margin-right: 75px;
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 1200px) {
     .soc-container {
         margin-right: 93px;
+        text-align: left;
     }
 }
 

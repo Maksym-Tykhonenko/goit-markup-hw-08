@@ -1,12 +1,19 @@
 .buttons__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
     .buttons__list {
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .buttons__list {
+        
+        margin-bottom: 50px;
     }
 }
 
